@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+	font-family: 'Anonymous Pro', serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.omsk {
+	background-image: url('../img/omsk-bg-main-page-header.jpeg');
+	height: 711px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+}
+
+/* Карусель Начало */
+
+.carousel {
+	position: relative;
+	width: 800px; /* Увеличена ширина карусели */
+	height: 300px;
+	margin: auto;
+	overflow: hidden;
+	border: 2px solid #c5c9cc;
+	border-radius: 5px;
+	background: #b0b4b8;
+	top: 40%;
+	opacity: 0.9;
+}
+
+.carousel-items {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+	display: flex; /* Используем flex для расположения картинки и текста */ /* Центрируем содержимое вертикально */
+	min-width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.carousel img {
+	margin-right: 20px;
+	margin-left: 30px; /* Отступ между картинкой и текстом */
+	width: 300px;
+	height: 270px;
+}
+
+button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(255, 255, 255, 0.8);
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	font-size: 18px;
+	border-radius: 5px; /* Добавляем радиус для кнопок */
+	transition: background-color 0.3s ease, transform 0.3s ease; /*Плавный переход цвета и увеличения*/
+}
+
+button:hover {
+	background-color: rgba(35, 205, 218, 0.8); /* Цвет при наведении */
+}
+
+.prev {
+	left: 10px;
+}
+
+.next {
+	right: 10px;
+}
+
+.text-content h1 {
+	margin-top: 0;
+}
+
+.text-content a {
+	text-decoration: none;
+	color: black;
+	transform: 1s;
+	font-size: 20px;
+	color: #1081dd;
+	margin-top: 0;
+}
+
+.text-content a:hover {
+	color: rgba(4, 255, 45, 0.8);
+}
+
+p {
+	margin-right: 30px;
+	font-size: 18px;
+}
+
+.text-content p {
+	color: black;
+}
+
+.text-content {
+	opacity: 0.8;
+}
+
+/* Карусель Конец */
+
+/* Нав. панель Начало */
+
+.first-panel,
+.second-panel {
+	background-image: url('../img/12.png');
+	background-size: 555px 222px;
+	width: 300px;
+	height: 150px;
+	color: white;
+	padding: 20px 0px 0px 20px;
+	margin: 25px 0 0 0;
+}
+
+.first-panel h1,
+.second-panel h1 {
+	font-size: 30px;
+	color: black;
+}
+
+.first-panel p,
+.second-panel p {
+	font-size: 20px;
+	color: black;
+}
+
+.first-panel,
+.second-panel {
+	border: solid 5px rgb(10, 148, 212);
+	border-radius: 20px;
+	transition: 1s;
+}
+
+.first-panel:hover,
+.second-panel:hover {
+	transform: scale(1.2);
+}
+
+.panel {
+	margin-top: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.panel a {
+	text-decoration: none;
+}
+
+.second-panel {
+	background-image: url('../img/13.webp');
+	background-size: 555px 222px;
+}
+
+
+/* новости */
+
+.news-container {
+	background-color: #1081dd;
+	height: 840px;
+	padding-top: 10px;
+	margin-top: 100px;
+}
+
+.cont {
+	width: 100%;
+	margin: auto;
+}
+
+.verh-zag {
+	padding: 0 30px;
+}
+
+.line {
+	background-color: white;
+	height: 1px;
+}
+
+.cont-new {
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	padding-top: 30px;
+	padding-left: 30px;
+	gap: 10px;
+}
+
+.cont-new img {
+	width: 350px;
+	height: 300px;
+}
+
+.strelka {
+	width: 25px;
+	height: 25px;
+}
+
+.verh-zag {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.all-news {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: rgb(0, 255, 0);
+}
+
+.second-new,
+.fir-new,
+.there-new,
+.fourth-new {
+	background: white;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 350px;
+	height: 600px;
+}
+
+.date,
+.zag,
+.osnov {
+	padding: 0 15px;
+}
+
+.zag {
+	font-size: 20px;
+}
+
+.osnov {
+	font-style: normal;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.date {
+	color: silver;
+}
+
+.news-block {
+	transition: 1s;
+}
+
+.news-block:hover {
+	transform: scale(1.07);
+}
+
+.line-blue {
+	background-color: blue;
+	height: 1px;
+	margin-top: 40px;
+	margin-bottom: 60px;
+	margin-left: 30px;
+}
+
+.cont-about {
+	width: 100%;
+	margin: auto;
+	margin-bottom: 60px;
+	margin-top: 60px;
+}
+
+.cont-about h1 {
+	color: #0d4b85;
+	padding-left: 70px;
+}
+
+.text-blue {
+	color: #0d4b85;
+	padding-left: 60px;
+}
+
+.cont-about p {
+	padding-left: 60px;
+}
+
+@media (max-width: 768px) {
+	.logo img {
+		width: 25px;
+		height: 25px;
+	}
+
+	.carousel-item img {
+		display: none;
+	}
+
+	.first-panel, .second-panel {
+		width: 200px;
+	}
+	
+	.panel {
+		flex-direction: column;
+	}
+
+	.carousel {
+		width: 400px;
+		height: 300px;
+	}
+
+	.text-content {
+		padding: 0 40px;
+	}
+
+	.text-content p {
+		font-size: 17px;
+	}
+
+	.main-zag {
+		font-size: 20px;
+	}
+
+	.all-news p {
+		font-size: 15px;
+	}
+
+	.all-news img {
+		width: 20px;
+		height: 20px;
+	}
+
+	.news-container {
+		height: 100%;
+	}
+
+	.cont-new {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.fir-new,
+	.second-new,
+	.there-new,
+	.fourth-new {
+		width: 400px;
+		height: 150px;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.cont-new img {
+		width: 150px;
+		height: 150px;
+	}
+
+	.date {
+		font-size: 7px;
+		margin: 5px 0
+	}
+
+	.zag {
+		font-size: 15px;
+		margin: 0;
+	}
+
+	.osnov {
+		font-size: 13px;
+	}
+
+	.all-text-news {
+		display: flex;
+		flex-direction: column;
+	}
+
+}
